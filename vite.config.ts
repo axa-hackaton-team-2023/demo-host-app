@@ -9,7 +9,7 @@ export default defineConfig({
     federation({
       name: 'app',
       remotes: {
-        remoteApp: 'http://localhost:5001/assets/remoteEntry.js',
+        remoteApp: 'https://axa-hackaton-team-2023.github.io/eh-widget-app/assets/remoteEntry.js',
       },
       shared: ['react','react-dom']
     })
@@ -19,5 +19,6 @@ export default defineConfig({
     target: 'esnext',
     minify: false,
     cssCodeSplit: false
-  }
+  },
+  base: '/demo-host-app/'
 })
